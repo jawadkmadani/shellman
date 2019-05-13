@@ -478,7 +478,12 @@
     "prefix": "alias",
     "body": "alias ${1:alias_name}=\"${2:command_to_alias}\"",
     "description": "alias name=\"command_to_alias\""
-  },
+	},
+	"awk": {
+    "prefix": "awk",
+    "body": "awk '{FS=\"${1:split_it_by}\"} /${2:search_by_word}/ {print \\$${3:2}}'",
+		"description": "awk split and search"
+	},
   "if": {
     "prefix": "if",
     "body": [
